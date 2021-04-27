@@ -6,7 +6,7 @@
   --primary-font-family: Roboto, sans-serif;
   --primary-font-style: normal;
   --primary-bg-color: #ffffff;
-  --secondary-bg-color: #F5F4FA;
+  --secondary-bg-color: #f5f4fa;
 }
 
 /* Roboto 400, 500, 700, 900, Raleway 700
@@ -17,6 +17,7 @@ font-family: "Roboto", sans-serif; */
 header bg color: #ececec;
 hero bg color: #2f303a;*/
 
+/* преимущества, чем мы занимаемся, команда и портфолио. */
 
 /* main css */
 body {
@@ -49,15 +50,17 @@ a {
   color: #ffffff;
   display: block;
   width: 1600px;
-  height: 600px;}
+  height: 600px;
+}
 
-.hero{
+.section-hero {
   text-align: center;
   vertical-align: center;
   padding-top: 201;
-  padding-right: 456;}
+  padding-right: 456;
+}
 
-  .order-button {
+.order-button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
@@ -66,16 +69,21 @@ a {
   color: #ffffff;
   text-align: center;
   border: none;
-  border-radius: 3px;  
+  border-radius: 3px;
 }
-.order-button {cursor: pointer;}
+.order-button {
+  cursor: pointer;
+}
 
 .order-button:hover {
   color: #000000;
 }
 
 /* sections особенности и чем мы занимаемся */
-.feature-section, .works-section {background-color: E5E5E5;}
+.feature-section,
+.works-section {
+  background-color: E5E5E5;
+}
 
 .section-title,
 .feature-title {
@@ -91,9 +99,12 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
-  letter-spacing: 0.03em;}
+  letter-spacing: 0.03em;
+}
 
-.team-section {background-color: var(--secondary-bg-color);}
+.team-section {
+  background-color: var(--secondary-bg-color);
+}
 .team-role,
 .feature-description {
   color: var(--secondary-text-color);
@@ -113,6 +124,12 @@ a {
   letter-spacing: 0.03em;
 }
 
+.feature-list,
+.works-list,
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* header & footer */
 /* 1__logo top and bottom of the page */
@@ -137,6 +154,10 @@ a {
 .site-nav .accent-logo,
 .footer .accent-logo {
   color: var(--accent-text-color);
+}
+
+.header {
+  border-bottom: 1px solid black;
 }
 
 /* 2__header navigation links */
@@ -169,7 +190,6 @@ a {
 /* .contacts-nav {
   text-align: right;} */
 
-
 .contacts-nav .link {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -177,7 +197,6 @@ a {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-
 
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
@@ -239,8 +258,7 @@ a {
 .radiobuttons-set li {
   display: inline-block;
   padding: 0;
-  margin 8px;
-  
+  margin: 8px;
 }
 
 .button {
@@ -249,14 +267,22 @@ a {
   line-height: 1.6;
   letter-spacing: 0.03;
   color: var(--primary-text-color);
-  }
+}
 
-.button {background-color: var(--secondary-bg-color);
-border: none;}
+.button {
+  background-color: var(--secondary-bg-color);
+  border: none;
+}
 
-.button:hover, .button:focus {
-  color: var(--white-color); 
-  background-color: #2196F3;}
-
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: #2196f3;
+}
 
 /* end of portfolio page */
+
+.container {
+  width: 1200px;
+  /* justify-content: center; */
+}
