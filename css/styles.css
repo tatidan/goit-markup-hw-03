@@ -14,7 +14,6 @@ font-family: "Raleway", sans-serif;
 font-family: "Roboto", sans-serif; */
 
 /* order-button bg color:  #2196f3;
-header bg color: #ececec;
 hero bg color: #2f303a;*/
 
 /* main css */
@@ -23,7 +22,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
@@ -117,9 +117,9 @@ body {
 /* =========HEADER=========== */
 
 .header {
-  background-color: #ececec;
+  background-color: var(--white-color);
   margin: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ececec;
 }
 .header .container {
   display: flex;
@@ -140,7 +140,6 @@ body {
 .site-nav-list-item {
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-right: 50px;
 }
 .site-nav-list-link {
   color: var(--primary-text-color);
@@ -149,6 +148,10 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
+.site-nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav-list-link:hover,
 .site-nav-list-link:focus {
   color: var(--accent-text-color);
@@ -173,9 +176,10 @@ body {
 .contacts-nav-link:focus {
   color: var(--accent-text-color);
 }
-.contacts-nav-item {
+.contacts-nav-item:not(:last-child) {
   margin-right: 50px;
 }
+
 /* ======end of HEADER CONTACTS-NAV======= */
 /* =========end of HEADER=========== */
 
@@ -205,7 +209,7 @@ body {
 /* =============FEATURES==================== */
 .feature-section,
 .about-section {
-  background-color: E5E5E5;
+  background-color: #e5e5e5;
 }
 .feature-list {
   display: flex;
@@ -321,6 +325,7 @@ body {
   margin-bottom: 8px;
 }
 .footer-links-link {
+  font-style: normal;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -339,7 +344,7 @@ body {
 /* ===========PORTFOLIO page============== */
 
 .portfolio-page {
-  background-color: #e5e5e5;
+  background-color: var(--white-color);
   margin: 0;
 }
 .portfolio-title {
@@ -354,7 +359,6 @@ body {
 .radiobuttons-list-item {
   display: inline-block;
   padding: 0;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .radiobuttons-list-item:not(:last-child) {
@@ -364,7 +368,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
   border: none;
@@ -389,8 +393,12 @@ body {
 .portfolio-projects-list-item {
   margin-left: 30px;
   margin-top: 30px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-projects-list-item:hover,
+.portfolio-projects-list-item:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .portfolio-project-card-text {
   padding: 20px 24px;
@@ -409,6 +417,7 @@ body {
   line-height: 1.9;
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
+  margin-bottom: 4px;
 }
 
 /* ===========END of PORTFOLIO page============== */
